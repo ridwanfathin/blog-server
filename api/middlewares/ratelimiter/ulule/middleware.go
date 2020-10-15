@@ -32,7 +32,7 @@ func NewMiddleware(limiter *limiter.Limiter, options ...Option) echo.MiddlewareF
 	return func(next echo.HandlerFunc) echo.HandlerFunc {
 		return func(c echo.Context) error {
 			key := middleware.KeyGetter(c)
-			context, err := middleware.Limiter.Get(c, key)
+			context, err := middleware.Limiter.Get(c.Request().Context(), key)
 			if err != nil {
 				middleware.OnError(c, err)
 				return echo.ErrForbidden
