@@ -78,5 +78,3 @@ func BenchmarkTokenBucketGet(b *testing.B) {
 
 	}
 }
-
-}
