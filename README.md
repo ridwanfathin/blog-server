@@ -24,15 +24,6 @@ cd echo-server
 export GOPATH=[your project path]
 ```
 
-* Get external libraries
-
-```shell
-go get "github.com/lib/pq"
-go get "github.com/jinzhu/gorm"
-go get "github.com/labstack/echo"
-go get "github.com/garyburd/redigo/redis"
-```
-
 * Change environment settings
 
 Change `host`, `user`, `password`, `dbname` file in `src/postgres/pq.go`
