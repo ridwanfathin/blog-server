@@ -7,7 +7,7 @@ import (
 
 //OpenDB open conncection to postgresql database
 func OpenDB() *gorm.DB {
-	db, err := gorm.Open("github.com/ridwanfathin/blog-server/postgres",
+	db, err := gorm.Open("postgres",
 		`host=localhost
 		user=airin password=password
 		dbname=bookstore
