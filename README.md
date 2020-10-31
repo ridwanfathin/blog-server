@@ -40,20 +40,20 @@ Change `host`, `user`, `password`, `dbname` file in `src/postgres/pq.go`
 * Build binaries:
 
 ```shell
-go build main
+make build
 ```
 
 * Run the server:
   * Linux & Mac
 
   ```shell
-  ./main
+  make run
   ```
 
   * Windows
 
   ```shell
-  main.exe
+  make run
   ```
 
 ## API Documentation
